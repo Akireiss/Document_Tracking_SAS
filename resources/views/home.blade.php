@@ -2,5 +2,5 @@
 
 @section('content')
 
-fd
+{{-- Hamiliiii --}}
 @endsection
