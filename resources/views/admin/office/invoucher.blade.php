@@ -4,7 +4,7 @@
 
 
     <div class="pagetitle">
-      <h1>Data Tables</h1>
+      <h1>Incoming Vouchers</h1>
 
       {{-- <nav>
         <ol class="breadcrumb">
@@ -44,9 +44,7 @@
                     <td>2023-01-06</td>
 
                     <td class="inline">
-                      <button class="btn-sm btn-danger btn">
 
-                      </button>
 
                       <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Receive

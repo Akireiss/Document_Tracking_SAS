@@ -53,6 +53,10 @@ Route::get('client/index', function () {
 });
 
 
+
+
+
+
 Route::get('office/index', function () {
     return view('admin.office.index');
 });
