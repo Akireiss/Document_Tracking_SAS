@@ -14,7 +14,7 @@
 
                 <div class="row mt-4" id="restOfContent" style="display: none;">
                     <div class="card-body p-2">
-                        <p class="lead fw-bold mb-5" style="color: #f37a27;">Form-</p>
+                        <p class="lead fw-bold mb-5" style="color: #f37a27;">Track Form</p>
                         <div class="row">
 
                             <div class="row">

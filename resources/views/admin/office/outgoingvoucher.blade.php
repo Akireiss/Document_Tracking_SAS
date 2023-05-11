@@ -39,7 +39,7 @@
 
 
                       <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Receive
+                        Received
                       </button>
                     </td>
                   </tr>
@@ -54,7 +54,7 @@
 
 
                       <a href="" type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Receive
+                        Received
                       </a>
                     </td>
                   </tr>

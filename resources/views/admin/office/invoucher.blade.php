@@ -43,12 +43,11 @@
                     <td>2023-01-5</td>
                     <td>2023-01-06</td>
 
-                    <td class="inline">
+                    <td>
 
-
-                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Receive
-                      </button>
+                        <a href="{{ url("office/outgoing/voucher") }}"  class="btn btn-success btn-sm">
+                            Receive
+                          </a>
                     </td>
                   </tr>
 
@@ -58,10 +57,10 @@
                     <td>2023-01-5</td>
                     <td>2023-01-06</td>
 
-                    <td class="inline">
+                    <td>
 
 
-                      <a href="" type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <a href="{{ url("office/outgoing/voucher") }}"  class="btn btn-success btn-sm">
                         Receive
                       </a>
                     </td>
@@ -71,8 +70,6 @@
 
                 </tbody>
               </table>
-              <!-- End Table with stripped rows -->
-
             </div>
           </div>
 
