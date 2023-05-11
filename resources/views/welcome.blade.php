@@ -17,6 +17,16 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
+
+
+{{--
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Necessitatibus reiciendis minima cum obcaecati,
+ aliquam itaque ullam suscipit magnam quia explicabo asperiores odio
+ eos, rem quod deserunt doloribus corporis? Accusantium, modi? --}}
+
+
+
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             {{-- @if (Route::has('login'))
