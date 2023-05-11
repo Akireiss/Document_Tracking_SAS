@@ -60,3 +60,10 @@ Route::get('office/index', function () {
 Route::get('office/incoming/voucher', function () {
     return view('admin.office.invoucher');
 });
+
+
+
+
+Route::get('office/outgoing/voucher', function () {
+    return view('admin.office.outgoingvoucher');
+});
