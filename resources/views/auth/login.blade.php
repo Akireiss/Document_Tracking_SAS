@@ -1,127 +1,45 @@
 @extends('layouts.app')
-@section('content') <br><br><br><br><br>
-
-    {{-- <img src="{{ url('img/logo.png') }}"  alt="img/logo.png" class="img/logo.png" width="150" height="150"> --}}
+@section('content')
 
 
-{{-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
 
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-start">
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="email" value="{{ old('name') }}" required autocomplete="name" autofocus>
+              <h3 class="mb-5">Sign in</h3>
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+              <div class="form-outline mb-4">
+                <label class="form-label">Email</label>
+                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+              </div>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+              <div class="form-outline mb-4">
+                <label class="form-label" for="typePasswordX-2">Password</label>
+                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+              </div>
 
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+              <!-- Checkbox -->
+              <div class=" d-flex justify-content-start mb-3">
+                <p  for="form1Example3">Don't Have An Account? <span class="text-decoration-underline text-primary">Click Here</span> </p>
+              </div>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button> --}}
-
-                                <section class="vh-100">
-                                    <div class="card p-5">
-                                    <div class="container-fluid h-custom">
-                                      <div class="row d-flex justify-content-center align-items-center h-100">
-                                        <div class="col-md-9 col-lg-6 col-xl-5">
-                                          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                                            class="img-fluid" alt="Sample image">
-                                        </div>
-                                        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                                          <form>
-                                            <img src="{{ url('img/logo.png') }}"  alt="img/logo.png" class="img/logo.png" width="150" height="150">
+              <div class="d-flex justify-content-end">
+                <a href="{{ url("admin/dashboard") }}" class="btn btn-primary btn-lg ms-auto" type="submit">Login</a>
+              </div>
 
 
 
 
-                                            <!-- Email input -->
-                                            <div class="form-outline mb-4">
-                                              <input type="email" id="form3Example3" class="form-control form-control-lg"
-                                                placeholder="Enter Name" />
-                                              <label class="form-label" for="form3Example3">User name</label>
-                                            </div>
-
-                                            <!-- Password input -->
-                                            <div class="form-outline mb-3">
-                                              <input type="password" id="form3Example4" class="form-control form-control-lg"
-                                                placeholder="Enter password" />
-                                              <label class="form-label" for="form3Example4">Password</label>
-                                            </div>
-
-                                            <div class="d-flex justify-content-between align-items-center">
-                                              <!-- Checkbox -->
-                                              <div class="form-check mb-0">
-                                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                                                <label class="form-check-label" for="form2Example3">
-                                                  Remember me
-                                                </label>
-                                              </div>
-                                              <a href="#!" class="text-body">Forgot password?</a>
-                                            </div>
-
-                                            <div class="text-center text-lg-start mt-4 pt-2">
-                                              <button type="button" class="btn btn-primary btn-lg"
-                                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                                              <p class="small fw-bold mt-2 pt-1 mb-0"><a href="#!"
-                                                  class="link-danger"></a></p>
-                                            </div>
-
-                                          </form>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div>
-                                {{-- @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif --}}
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </section>
 @endsection
