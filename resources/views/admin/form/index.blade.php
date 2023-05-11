@@ -48,7 +48,7 @@
                     <td>Sa puso mo</td>
                     <td class="inline">
                       <button class="btn-sm btn-danger btn">
-Cancel
+
                       </button>
 
                       <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -65,7 +65,7 @@ Cancel
                     <td>Sa puso mo</td>
                     <td class="inline">
                       <button class="btn-sm btn-danger btn">
-Cancel
+
                       </button>
 
                       <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">

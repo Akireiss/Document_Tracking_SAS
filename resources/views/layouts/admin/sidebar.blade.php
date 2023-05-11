@@ -24,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="forms-validation.html">
+            <a href="{{ url("office/outgoing/voucher") }}">
               <i class="bi bi-circle"></i><span>Outgoing Voucher</span>
             </a>
           </li>

@@ -49,7 +49,7 @@
                       </button>
 
                       <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Recieve
+                        Receive
                       </button>
                     </td>
                   </tr>
@@ -61,13 +61,11 @@
                     <td>2023-01-06</td>
 
                     <td class="inline">
-                      <button class="btn-sm btn-danger btn">
 
-                      </button>
 
-                      <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Recieve
-                      </button>
+                      <a href="" type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Receive
+                      </a>
                     </td>
                   </tr>
 
