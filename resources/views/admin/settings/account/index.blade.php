@@ -23,7 +23,7 @@
           <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <h2>Kevin Anderson</h2>
+            <h2>Admin</h2>
             <h3>Web Designer</h3>
             <div class="social-links mt-2">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -257,9 +257,9 @@
 
               <tr>
                 <th scope="row"></th>
-                <td>Brandon Jacob</td>
-                <td>2023-01-5</td>
-                <td>2023-01-06</td>
+                <td>Jacob</td>
+                <td>Jacob@gmail.com</td>
+                <td>12345678</td>
                 <td>
 
                     <div class="form-check form-switch">
@@ -280,9 +280,9 @@ Cancel --}}
 
               <tr>
                 <th scope="row"></th>
-                <td>Brandon Jacob</td>
-                <td>2023-01-5</td>
-                <td>2023-01-06</td>
+                <td>Sample</td>
+                <td>Sample@gmailcom</td>
+                <td>12345677</td>
                 <td>
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>

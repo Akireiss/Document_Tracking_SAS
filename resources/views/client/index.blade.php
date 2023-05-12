@@ -27,20 +27,36 @@
                                         <div class="horizontal-timeline">
                                             <ul class="list-inline items d-flex justify-content-between">
                                                 <li class="list-inline-item items-list">
-                                                    <p class="py-1 px-2 rounded text-white"
+                                                    <p class="py-1 px-2 rounded text-white mx-1 "
                                                         style="background-color: #f37a27;">Audit Office</p>
                                                 </li>
                                                 <li class="list-inline-item items-list">
-                                                    <p class="py-1 px-2 rounded text-white"
-                                                        style="background-color: #f37a27;">Shipped</p>
+                                                    <p class="py-1 px-2 rounded text-white mx-1"
+                                                        style="background-color: #f37a27;">Budget Office</p>
                                                 </li>
                                                 <li class="list-inline-item items-list">
-                                                    <p class="py-1 px-2 rounded text-white"
-                                                        style="background-color: #f37a27;">On the way</p>
+                                                    <p class="py-1 px-2 rounded text-white mx-1"
+                                                        style="background-color: #f37a27;">Accounting Office</p>
+                                                </li>
+                                                <li class="list-inline-item items-list">
+                                                    <p class="py-1 px-2 rounded text-white mx-1"
+                                                        style="background-color: #f37a27;">Audit Office</p>
+                                                </li>
+                                                <li class="list-inline-item items-list">
+                                                    <p class="py-1 px-2 rounded text-white mx-1"
+                                                        style="background-color: #f37a27;">Cashier's Office</p>
+                                                </li>
+                                                <li class="list-inline-item items-list">
+                                                    <p class="py-1 px-2 rounded text-white mx-1"
+                                                        style="background-color: #f37a27;">Chancellor's Office</p>
+                                                </li>
+                                                <li class="list-inline-item items-list">
+                                                    <p class="py-1 px-2 rounded text-white mx-1"
+                                                        style="background-color: #f37a27;">Cashier's Office</p>
                                                 </li>
                                                 <li class="list-inline-item items-list text-end"
                                                     style="margin-right: 8px;">
-                                                    <p style="margin-right: -8px;">Delivered</p>
+                                                    <p style="margin-right: -8px;">Released</p>
                                                 </li>
                                             </ul>
                                         </div>
