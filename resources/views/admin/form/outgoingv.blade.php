@@ -8,7 +8,7 @@
 
 
     <div class="pagetitle">
-        <h1>Incoming Vouchers</h1>
+        <h1>Outgoing Vouchers</h1>
 
         {{-- <nav>
           <ol class="breadcrumb">
@@ -35,7 +35,7 @@
                       <th scope="col">Date sent </th>
                       <th scope="col">Date receive</th>
                       {{-- <th scope="col"> Location</th> --}}
-                      <th scope="col"> Action</th>
+                      <th scope="col"> Status</th>
                     </tr>
 
                   <tbody>
@@ -49,8 +49,12 @@
 
                       <td>
 
-                          <a href="{{ url("admin/outgoing") }}"  class="btn btn-success btn-sm">
-                              Receive
+                          <a href="{{ url("#") }}"  class="btn btn-success btn-sm">
+                              Received
+                            </a>
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Remarks
+                              </button>
                             </a>
                       </td>
                     </tr>
@@ -65,7 +69,11 @@
 
 
                         <a href="{{ url("#") }}"  class="btn btn-success btn-sm">
-                          Receive
+                          Received
+                        </a>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Remarks
+                          </button>
                         </a>
                       </td>
                     </tr>
@@ -82,6 +90,8 @@
       </section>
 
 
+
+
   </main>
 
 
@@ -90,43 +100,43 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Comments</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
 
 
             <div class="card">
-                <div class="title">Purchase Reciept</div>
+                <div class="title"></div>
                 <div class="info">
                     <div class="row">
                         <div class="col-7">
-                            <span id="heading">Date</span><br>
-                            <span id="details">10 October 2018</span>
+                            <span id="heading"></span><br>
+                            <span id="details"></span>
                         </div>
                         <div class="col-5 pull-right">
-                            <span id="heading">Order No.</span><br>
-                            <span id="details">012j1gvs356c</span>
+                            <span id="heading"></span><br>
+                            <span id="details"></span>
                         </div>
                     </div>
                 </div>
 
-                <div class="total">
+                {{-- <div class="total">
                     <div class="row">
                         <div class="col-9"></div>
-                        <div class="col-3"><big>&pound;262.99</big></div>
+                        <div class="col-3"><big>&pound;</big></div>
                     </div>
-                </div>
-                <div class="tracking">
+                </div> --}}
+                {{-- <div class="tracking">
                     <div class="title">Tracking Order</div>
-                </div>
+                </div> --}}
                 <div class="progress-track">
-                    <ul id="progressbar">
-                        <li class="step0 active " id="step1">Ordered</li>
-                        <li class="step0 active text-center" id="step2">Shipped</li>
-                        <li class="step0 active text-right" id="step3">On the way</li>
-                        <li class="step0 text-right" id="step4">Delivered</li>
-                    </ul>
+                    {{-- <ul id="progressbar">
+                        <li class="step0 active " id="step1"></li>
+                        <li class="step0 active text-center" id="step2"></li>
+                        <li class="step0 active text-right" id="step3"></li>
+                        <li class="step0 text-right" id="step4"></li>
+                    </ul> --}}
                 </div>
 
 

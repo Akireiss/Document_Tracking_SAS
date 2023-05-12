@@ -44,6 +44,13 @@ Route::get('admin/settings/account', function () {
     return view('admin.settings.account.index');
 });
 
+//Outoging Voucer
+Route::get('admin/outgoing', function () {
+    return view('admin.form.outgoingv');
+});
+
+
+//Admin
 
 
 
@@ -64,6 +71,7 @@ Route::get('office/index', function () {
 Route::get('office/incoming/voucher', function () {
     return view('admin.office.invoucher');
 });
+
 
 
 

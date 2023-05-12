@@ -24,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="{{ url("office/outgoing/voucher") }}">
+            <a href="{{ url("admin/outgoing") }}">
               <i class="bi bi-circle"></i><span>Outgoing Voucher</span>
             </a>
           </li>

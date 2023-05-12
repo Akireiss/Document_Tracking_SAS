@@ -163,7 +163,7 @@
 
               <tr>
                 <th scope="col"></th>
-                <th scope="col">Name</th>
+                <th scope="col">Voucher Owner</th>
                 <th scope="col">Account</th>
                 <th scope="col">Password</th>
                 <th scope="col"> Status</th>
@@ -176,33 +176,41 @@
               <tr>
                 <th scope="row"></th>
                 <td>Brandon Jacob</td>
-                <td>2023-01-5</td>
-                <td>2023-01-06</td>
-                <td>Sa puso mo</td>
+                <td>Brandon@gmail.com</td>
+                <td> 654321</td>
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+
+                      </div>
+                </td>
                 <td class="inline">
-                  <button class="btn-sm btn-danger btn">
-Cancel
+
                   </button>
 
                   <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Track
+                    Update
                   </button>
                 </td>
               </tr>
 
               <tr>
                 <th scope="row"> </th>
-                <td>Brandon Jacob</td>
-                <td>2023-01-5</td>
-                <td>2023-01-06</td>
-                <td>Sa puso mo</td>
+                <td>Alando</td>
+                <td>Alando@gmail.com</td>
+                <td>1234567</td>
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+
+                      </div>
+
+                </td>
                 <td class="inline">
-                  <button class="btn-sm btn-danger btn">
-Cancel
-                  </button>
+
 
                   <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Track
+                    Update
                   </button>
                 </td>
               </tr>
@@ -237,9 +245,9 @@ Cancel
 
               <tr>
                 <th scope="col"></th>
-                <th scope="col">Voucher owner</th>
-                <th scope="col">Date sent </th>
-                <th scope="col">Date receive</th>
+                <th scope="col">Name</th>
+                <th scope="col">Account </th>
+                <th scope="col">Password</th>
                 <th scope="col"> Status</th>
                 <th scope="col"> Action</th>
               </tr>
@@ -248,7 +256,7 @@ Cancel
 
 
               <tr>
-                <th scope="row">69</th>
+                <th scope="row"></th>
                 <td>Brandon Jacob</td>
                 <td>2023-01-5</td>
                 <td>2023-01-06</td>
@@ -260,29 +268,34 @@ Cancel
                       </div>
                 </td>
                 <td class="inline">
-                  <button class="btn-sm btn-danger btn">
-Cancel
+                  {{-- <button class="btn-sm btn-danger btn">
+Cancel --}}
                   </button>
 
                   <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Track
+                    Update
                   </button>
                 </td>
               </tr>
 
               <tr>
-                <th scope="row">69</th>
+                <th scope="row"></th>
                 <td>Brandon Jacob</td>
                 <td>2023-01-5</td>
                 <td>2023-01-06</td>
-                <td>Sa puso mo</td>
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+
+                      </div>
+                </td>
                 <td class="inline">
-                  <button class="btn-sm btn-danger btn">
-Cancel
+                  {{-- <button class="btn-sm btn-danger btn">
+Cancel --}}
                   </button>
 
                   <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Track
+                    Update
                   </button>
                 </td>
               </tr>
