@@ -147,6 +147,128 @@
   </section>
 
 
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Client Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        text-transform: uppercase;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      select {
+        height: 36px;
+      }
+
+      .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .submit-btn:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="container">
+    <h2>Add User</h2>
+
+    <form action="process_registration.php" method="POST">
+      <div style="display: flex; justify-content: space-between;">
+        <div style="flex-basis: 48%;">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div style="flex-basis: 48%;">
+          <label for="email">Create Password:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+        <div style="flex-basis: 48%;">
+          <label for="phone">User Name:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div style="flex-basis: 48%;">
+          <label for="address">Repeat password:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;">
+        <div style="flex-basis: 48%;">
+          <label for="city">Sample:</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+        <div style="flex-basis: 48%;">
+          <label for="country">Sample:</label>
+          <input type="text" id="country" name="country" required>
+        </div>
+      </div>
+
+      <label for="occupation">Sample:</label>
+      <select id="occupation" name="occupation" required>
+        {{-- <option value="">Select an occupation</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Designer">Designer</option>
+        <option value="Other">Other</option> --}}
+      </select>
+
+      <input type="submit" value="Save" class="submit-btn">
+    </form>
+  </div>
+
+  </body>
+  </html>
 
 
   {{-- User Accounts --}}

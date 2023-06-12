@@ -24,12 +24,24 @@
             </a>
           </li>
           <li>
-            <a href="{{ url("admin/outgoing") }}">
-              <i class="bi bi-circle"></i><span>Outgoing Voucher</span>
+            <a href="{{ url('admin/form1') }}">
+              <i class="bi bi-circle"></i><span>Pending</span>
             </a>
           </li>
+          <li>
+            <a href="{{ url("admin/outgoing1") }}">
+              <i class="bi bi-circle"></i><span> Suspension</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ url("admin/outgoing") }}">
+              <i class="bi bi-circle"></i><span>Released</span>
+            </a>
+          </li>
+
         </ul>
-      </li><!-- End Forms Nav -->
+      </li>
+      <!-- End Forms Nav -->
 
 
 
@@ -39,7 +51,13 @@
           <i class="bi bi-gear"></i><span>Settings</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
+            {{-- <li>
+                <a href="{{ url(" ") }}">
+
+                  <i class="bi bi-circle"></i><span>Add User</span>
+                </a>
+              </li>
+            <li> --}}
             <a href="{{ url("admin/settings/account") }}">
 
               <i class="bi bi-circle"></i><span>Manage Account</span>
