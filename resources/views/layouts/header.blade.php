@@ -29,7 +29,10 @@
 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/track.css" rel="stylesheet">
 
+  {{-- icon --}}
+  <script src="https://kit.fontawesome.com/df8aef9847.js" crossorigin="anonymous"></script>
   @yield('styles')
 @yield('modal')
 
