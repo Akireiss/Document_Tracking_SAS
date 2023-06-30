@@ -1,7 +1,15 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Test1Controller;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\UpdateController;
+use App\Http\Controllers\ViewController;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Route;
+use Spatie\LaravelIgnition\Http\Controllers\UpdateConfigController;
 
 /*
 |--------------------------------------------------------------------------
@@ -79,3 +87,24 @@ Route::get('office/incoming/voucher', function () {
 Route::get('office/outgoing/voucher', function () {
     return view('admin.office.outgoingvoucher');
 });
+
+
+
+Route::get('admin/dashboard', [DashboardController::class, 'index']);
+
+Route::get('admin/client', [DashboardController::class, 'index1']);
+
+// Route::get('admin/test',[TestController::class, 'create']);
+
+Route::get('test', [Test1Controller::class, 'register']);
+
+
+Route::get('admin/dashboard/account/update', [UpdateController::class,'create']);
+
+Route::get('admin/dashboard/account/create', [AccountController::class, 'index']);
+
+
+Route::get('admin/dashboard/account/view', [ViewController::class, 'index']);
+
+
+Route::post('admin/account/store', [AccountController::class, 'store'])->name('form.submit');

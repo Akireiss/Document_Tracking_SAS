@@ -384,7 +384,7 @@ h6 {
   z-index: 997;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #f7fffb;
+  background-color: #25ed1e;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -611,9 +611,9 @@ h6 {
   padding: 20px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #a5adb7 transparent;
-  box-shadow: 0px 0px 20px rgba(158, 161, 166, 0.1);
-  background-color:  #bacdc3;
+  scrollbar-color: #f15203 transparent;
+  box-shadow: 0px 0px 20px rgba(252, 4, 37, 0.1);
+  background-color:  #5efd46;
 }
 
 @media (max-width: 1199px) {
@@ -687,9 +687,9 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  color: #0b0b70;
   transition: 0.3;
-  background: #f6f9ff;
+  background: #f8f8f8;
   padding: 10px 15px;
   border-radius: 4px;
 }

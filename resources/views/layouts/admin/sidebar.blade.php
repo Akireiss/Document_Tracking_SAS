@@ -7,6 +7,7 @@
       <li class="nav-item">
         <a class="nav-link " href="index.html">
           <i class="bi bi-grid"></i>
+          <a href="{{ url('admin/Dashboard') }}">
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
@@ -100,23 +101,30 @@
           </a>
           <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav" style="">
             <li>
-              <a href="tables-general.html">
+              <a href="{{ url('admin/dashboard/account/create') }}">
                 <i class="bi bi-circle"></i><span>Create Account</span>
               </a>
             </li>
             <li>
-              <a href="tables-data.html">
-                <i class="bi bi-circle"></i><span> Edit Account</span>
+            <a href="{{ url('admin/dashboard/account/update') }}"
+            <i class="bi bi-circle"></i><span>Account Settings</span>
+              </a>
+            </li>
+            <a href="{{ url('admin/dashboard/account/view') }}">
+                <i class="bi bi-circle"></i><span>View Account</span>
               </a>
             </li>
           </ul>
         </li>
 <br>
     <li>
-        <a class="nav-link collapsed" href="pages-Logout.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Log out</span>
-        </a>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
+            @csrf
+            <button type="submit" class="btn btn-link text-decoration-none" style="background-color: rgb(255, 255, 255);">
+                <i class="bi bi-box-arrow-in-right"></i> {{ __('Logout') }}
+            </button>
+        </form>
       </li>
 
 
