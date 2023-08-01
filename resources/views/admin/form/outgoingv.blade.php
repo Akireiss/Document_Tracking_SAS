@@ -8,7 +8,7 @@
 
 
     <div class="pagetitle">
-        <h1>Outgoing Vouchers</h1>
+        <h1>Released Vouchers</h1>
 
         {{-- <nav>
           <ol class="breadcrumb">
@@ -30,10 +30,10 @@
                 <table class="table datatable">
 
                     <tr>
-                      <th scope="col">Voucher ID.</th>
+                      <th scope="col">Voucher Type</th>
                       <th scope="col">Voucher owner</th>
-                      <th scope="col">Date sent </th>
-                      <th scope="col">Date receive</th>
+                      <th scope="col">Date/Time sent </th>
+                      <th scope="col">Date/Time receive</th>
                       {{-- <th scope="col"> Location</th> --}}
                       <th scope="col"> Status</th>
                     </tr>
@@ -44,9 +44,8 @@
                     <tr>
                       <th scope="row">654321</th>
                       <td>Brandon Jacob</td>
-                      <td>2023-01-5</td>
-                      <td>2023-01-06</td>
-
+                      <td>2023-01-5 <br>9:10 am.</td>
+                      <td>2023-01-06 <br> 2:11 pm.</td>
                       <td>
 
                           <a href="{{ url("#") }}"  class="btn btn-success btn-sm">
@@ -62,9 +61,8 @@
                     <tr>
                       <th scope="row">123456</th>
                       <td> Alando </td>
-                      <td>2023-01-5</td>
-                      <td>2023-01-06</td>
-
+                      <td>2023-01-5 <br> 10:11 am.</td>
+                      <td>2023-01-06 <br> 1:30 pm.</td>
                       <td>
 
 

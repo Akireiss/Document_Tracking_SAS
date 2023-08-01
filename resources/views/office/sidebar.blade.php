@@ -1,4 +1,3 @@
-
 <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
@@ -20,18 +19,13 @@
                 </a>
               </li>
             </ul>
-          </li><!-- End Forms Nav -->
+          </li>
 
-
-
-
-
-      <li class="nav-item">
-        <a class="nav-link " href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>Account Settings</span>
-        </a>
-      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('office/Account/Settings') }}">
+                <i class="bi bi-gear"></i><span>Account Settings</span>
+            </a>
+        </li>
 
       <li class="nav-item">
         <a class="nav-link " href="index.html">
@@ -42,13 +36,15 @@
 
 
 <br>
-    <li>
-        <a class="nav-link collapsed" href="pages-Logout.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Log out</span>
-        </a>
-      </li>
+<li>
 
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
+        @csrf
+        <button type="submit" class="btn btn-link text-decoration-none" style="background-color: rgb(255, 255, 255);">
+            <i class="bi bi-box-arrow-in-right"></i> {{ __('Logout') }}
+        </button>
+    </form>
+  </li>
 
       <!-- End log out Page Nav -->
 

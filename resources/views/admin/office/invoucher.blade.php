@@ -28,8 +28,10 @@
                   <tr>
                     <th scope="col">Voucher ID.</th>
                     <th scope="col">Voucher owner</th>
-                    <th scope="col">Date sent </th>
-                    <th scope="col">Date receive</th>
+                    <th scope="col">Date/Time receive </th>
+
+                    <th scope="col">Date/Time sent</th>
+                    <th scope="col">Status</th>
                     {{-- <th scope="col"> Location</th> --}}
                     <th scope="col"> Action</th>
                   </tr>
@@ -42,7 +44,7 @@
                     <td>Brandon Jacob</td>
                     <td>2023-01-5</td>
                     <td>2023-01-06</td>
-
+                    <td> ffd</td>
                     <td>
 
                         <a href="{{ url("office/outgoing/voucher") }}"  class="btn btn-success btn-sm">
@@ -56,7 +58,7 @@
                     <td> Alando </td>
                     <td>2023-01-5</td>
                     <td>2023-01-06</td>
-
+                    <td> ffd</td>
                     <td>
 
 

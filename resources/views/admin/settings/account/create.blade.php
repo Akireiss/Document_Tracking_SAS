@@ -106,12 +106,14 @@ Add Account
                 <label for="office" class="form-label">Office</label>
                 <input type="text" class="form-control" id="office" name="office">
             </div>
+
+
             <div class="mb-3 col-md-6">
                 <label for="role" class="form-label">Role</label>
-                <select class="form-select" id="role" name="role">
-                    <option value="option1">Head</option>
-                    <option value="option2">Staff</option>
-                    <!-- Add more options as needed -->
+                <select class="form-select" id="role" name="role_id">
+                    @foreach ($roles as $role )
+                    <option value="{{$role->id}}">{{$role->role}}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="d-flex justify-content-end">

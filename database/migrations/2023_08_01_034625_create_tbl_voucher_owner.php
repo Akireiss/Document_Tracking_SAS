@@ -13,8 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->tinyInteger('role_as')->default('0')->comment('0=user, 1=admin');
+        Schema::create('tbl_voucher_owner', function (Blueprint $table) {
+            $table->id();
+            $table->string('description');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('tbl_voucher_owner');
     }
 };

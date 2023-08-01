@@ -3,6 +3,9 @@
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\PendingController;
+use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\SuspensionController;
 use App\Http\Controllers\Test1Controller;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\UpdateController;
@@ -108,3 +111,15 @@ Route::get('admin/dashboard/account/view', [ViewController::class, 'index']);
 
 
 Route::post('admin/account/store', [AccountController::class, 'store'])->name('form.submit');
+
+Route::get(' office/Account/Settings', [ SettingsController::class, 'create']);
+Route::get('admin/account/pending', [ PendingController::class, 'create']);
+
+
+use App\Http\Controllers\VoucherController;
+
+
+Route::get('admin/account/pending', [ PendingController::class, 'create']);
+Route::post('/vouchers/{id}/suspend', [VoucherController::class, 'suspend'])->name('suspendVoucher');
+Route::post('/vouchers/{id}/release', [VoucherController::class, 'release'])->name('releaseVoucher');
+Route::get(' admin/Suspension', [ SuspensionController::class, 'index']);

@@ -6,9 +6,10 @@
 
       <li class="nav-item">
         <a class="nav-link " href="index.html">
-          <i class="bi bi-grid"></i>
+          <i class="bi bi-grid"></i><span>Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+          {{-- <i class="bi bi-grid" >Dashboard</i> --}}
           <a href="{{ url('admin/Dashboard') }}">
-          <span>Dashboard</span>
+
         </a>
       </li><!-- End Dashboard Nav -->
 
@@ -25,12 +26,12 @@
             </a>
           </li>
           <li>
-            <a href="{{ url('admin/form1') }}">
+            <a href="{{ url('admin/account/pending') }}">
               <i class="bi bi-circle"></i><span>Pending</span>
             </a>
           </li>
           <li>
-            <a href="{{ url("admin/outgoing1") }}">
+            <a href="{{ url("admin/Suspension") }}">
               <i class="bi bi-circle"></i><span> Suspension</span>
             </a>
           </li>
