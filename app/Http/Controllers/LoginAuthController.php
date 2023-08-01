@@ -28,10 +28,10 @@ class LoginAuthController extends Controller
     //     return back()->withErrors(['login' => 'Invalid credentials.']);
     // }
 
-    public function logout()
-    {
-        Auth::logout();
+    // public function logout()
+    // {
+    //     Auth::logout();
 
-        return redirect('/');
-    }
+    //     return redirect('/');
+    // }
 }
