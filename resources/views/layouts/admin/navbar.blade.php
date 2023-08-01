@@ -182,7 +182,7 @@
 
 
 
-<li>
+{{-- <li>
 
                 <a class="dropdown-item" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
@@ -193,7 +193,7 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
                 </form>
-            </li>
+            </li> --}}
 
 
           </ul><!-- End Profile Dropdown Items -->

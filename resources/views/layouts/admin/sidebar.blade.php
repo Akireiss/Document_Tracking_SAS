@@ -120,12 +120,13 @@
 <br>
     <li>
 
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
-            @csrf
-            <button type="submit" class="btn btn-link text-decoration-none" style="background-color: rgb(255, 255, 255);">
-                <i class="bi bi-box-arrow-in-right"></i> {{ __('Logout') }}
-            </button>
-        </form>
+
+<form action="{{ route('logoutauth') }}" method="POST">
+    @csrf
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>
+
+
       </li>
 
 

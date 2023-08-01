@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Office;
 use App\Models\Roles;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -16,25 +17,29 @@ class AccountController extends Controller
     public function index()
     {
         $roles = Roles::all();
-        return view('admin.settings.account.create', compact('roles'));
+        $offices = Office::all();
+        return view('admin.settings.account.create',
+        compact('roles', 'offices'));
     }
 
 
-     public function store(Request $request)
+    public function store(Request $request)
     {
         // Validate the form data
         $validatedData = $request->validate([
             'f_name' => 'required',
             'm_name' => 'nullable',
             'l_name' => 'required',
-            'username' => 'required|unique:users',
-            'password' => 'required',
-            'office' => 'required',
-            'role_id' => 'required'
+            'username' => 'required|string|unique:users|max:255',
+            'password' => 'required|string|max:255',
+            'role_id' => 'required',
+            'office_id' => 'required',
         ]);
 
-        User::create($validatedData);
+        // Create the user using the validated data
+         User::create($validatedData);
 
-        return redirect()->back()->with('success', 'Form submitted successfully!');
+        // Redirect or return a response as needed
+        return redirect()->back()->with('success', 'User Added Successfully'); // Replace 'success.route' with the actual route name to redirect after form submission.
     }
 }

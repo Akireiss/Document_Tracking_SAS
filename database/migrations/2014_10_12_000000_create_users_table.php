@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('m_name');
             $table->string('l_name');
             $table->string('username')->unique();
-            $table->string('office');
             $table->string('password');
             $table->unsignedBigInteger('office_id');
             $table->unsignedBigInteger('role_id');

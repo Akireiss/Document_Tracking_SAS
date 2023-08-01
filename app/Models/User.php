@@ -21,13 +21,15 @@ class User extends Authenticatable
 
     protected $fillable = [
         'f_name',
-        'm_name',
         'l_name',
+        'm_name',
         'username',
-        'office',
         'password',
-        'role_id'
+        'role_id',
+        'office_id'
     ];
+
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -47,4 +49,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role(){
+        return $this->belongsTo(Roles::class);
+    }
+
+    public function office(){
+        return $this->belongsTo(Office::class);
+    }
+
 }
